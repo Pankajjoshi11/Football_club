@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat";
+    color: #fff;
+  }
+
+  body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0,0.9));
+    background-position: cover;
+  }
+
+  #nav {
+    height: 130px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    padding: 0 120px;
+    gap: 50px;
+    position: fixed;
+    justify-content: flex-start;
+    z-index: 999;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+  }
+  
+  #nav img {
+    height: 4.5vw;
+  }
+  #nav a{
+    text-decoration: none;
+  }
+  #nav h4 {
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1.15vw;
+    text-decoration: none;
+  }
+  #nav h4::after{
+    width: 0%;
+    height: 4px;
+    background: rgb(145, 230, 25);
+    display: block;
+    content: '';
+    margin: auto;
+    transition: 0.5s;
+  }
+  #nav h4:hover::after{
+    width: 100%;
+}
+
+
+
+
+.slide{
+    margin: 20px 20px;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.5);
+    display: block;
+    height: 10%;
+    position: relative;
+    width: 75%;
+    display: inline-block;
+    text-align: center;
+    margin-left: 187px;
+    border-radius: 3px;
+    border: 5px solid rgb(145, 230, 25);
+    justify-content: center;
+    top: 283px;
+}
+.slide h1{
+    font-size: 40px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    background-color:linear-gradient(rgba(0, 0, 0, 0.5));
+}
+.slide form{
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    flex-wrap: wrap;
+}
+.slide form input{
+    width: 300px;
+    height: 50px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    margin: 70px;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 25px;
+    background: none;
+    border-bottom: 2px solid rgb(145, 230, 25);
+}
+.slide form h4{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;    
+    margin-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.slide form textarea{
+    width: 770px;
+    margin-top: 15px;
+    height: 300px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 12px;
+    border-radius: 4px;
+    color: black;
+}
+.slide form #button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: rgb(145, 230, 25);
+    border-radius: 4px;
+}
+.slide form #button:hover{
+    transition: 0.2s;
+    background-color: white;
+    cursor: pointer;
+    color: black;
+}
+
+#footer {
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(to left bottom, #119f3a 0%, #a3d421 80%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6.5vw;
+    padding: 0 100px;
+    top: 500px;
+  }
+  #footer > img {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+  }
+  #f1 img {
+    height: 100px;
+  }
+  #f1,
+  #f2,
+  #f3,
+  #f4 {
+    width: fit-content;
+    position: relative;
+    z-index: 99;
+    /* background-color: red; */
+  }
+
+  #logo{
+    height: 100px;
+    width: 100px;
+  }
+  #f2 h3 {
+    font-size: 1.6vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 900;
+    margin-bottom: 8px;
+  }
+  
+  #f3 h3 {
+    font-size: 1.6vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+  #f4 h4 {
+    font-size: 1vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
